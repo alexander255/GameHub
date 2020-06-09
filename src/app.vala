@@ -352,7 +352,7 @@ namespace GameHub
 				};
 
 				info("Restarting with GDB");
-				Utils.run(exec_cmd).dir(Environment.get_current_dir()).run_sync();
+				Utils.run(exec_cmd).dir(Environment.get_current_dir()).run_sync_nofail();
 				exit_status = 0;
 				return true;
 			}
